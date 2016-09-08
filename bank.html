@@ -1,0 +1,14 @@
+<meta charset = "utf-8">
+<script>
+var n = 0;
+var x = 0;
+var sum = parseInt(prompt("Сумма вклада"));
+var percent = parseInt(prompt("Процентная ставка"));
+var year = parseInt(prompt("Срок"));
+for(n = 1; n <= year; n++)
+	{
+		sum = (sum *(1 + (percent/100)));
+		alert("Сумма за " + n + " год составляет: " + sum + " руб."); 
+	}
+	alert("Общая сумма равна: " + sum + " руб.");
+</script>
